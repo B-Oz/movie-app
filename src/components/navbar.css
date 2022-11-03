@@ -1,7 +1,7 @@
 /* 21D495 */
 
-.nav {
-  background-color: #21d495;
+.nav-bar {
+  background-color: #246e82;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,13 +20,18 @@
   color: black;
   font-size: 2rem;
   margin-top: 0.5rem;
+  transition: color 1s;
+}
+
+.left a:hover {
+  color: whitesmoke;
 }
 .right {
   margin-right: 1rem;
   margin-top: 0.5rem;
 }
 
-.nav-link {
+.link {
   font-size: 1.3rem;
   padding: 0.5rem;
   text-decoration: none;
@@ -34,8 +39,9 @@
   margin: 0 0.7rem;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #38e6a9;
+  background-color: #277f97;
 }
-.nav-link:hover {
-  background-color: rgb(251, 238, 215);
+.link:hover {
+  background-color: #2f97b4;
+  color: whitesmoke;
 }
