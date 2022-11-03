@@ -1,5 +1,41 @@
 /* 21D495 */
 
-.nav-left {
-  background-color: #21d495 !important;
+.nav {
+  background-color: #21d495;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.left a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.right {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  margin: 0 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #38e6a9;
+}
+.nav-link:hover {
+  background-color: rgb(251, 238, 215);
 }

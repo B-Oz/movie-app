@@ -1,25 +1,25 @@
 import React from "react";
 import image from "../assets/film.gif";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="container-fluid nav-left d-flex flex-row">
-          <a className="navbar-brand " href="https://github.com/B-Oz/movie-app">
-            <img
-              src={image}
-              alt="film-gif"
-              style={{ width: 80 }}
-              className="d-inline-block align-text-top"
-            />
-            React Movie App
-          </a>
-          <div className="d-flex  flex-column justify-content-end">
-            <button className="btn">Login</button>
-            <button className="btn">Register</button>
+        <div className=" nav ">
+          <div className=" left">
+            <img src={image} alt="film-gif" style={{ width: 80 }} />
+            <a
+              className="navbar-brand d-inline-block align-middle"
+              href="https://github.com/B-Oz/movie-app"
+            >
+              React Movie App
+            </a>
+          </div>
+          <div className="right">
+            <NavLink className="nav-link">Login</NavLink>
+            <NavLink className="nav-link">Register</NavLink>
           </div>
         </div>
       </nav>
